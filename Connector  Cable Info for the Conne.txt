@@ -1,0 +1,73 @@
+Connector / Cable Info for the Connex:
+
+Breakout to base:
+
+The breakout-to-base cable is a 6 conductor, 26AWG or 28AWG modular telephone cable with offset latch (MMJ) connectors on each end
+Wired straight thru. OE cable has white wire closest to offset latch. OE cable is 28AWG. Max distance per Natus is 50 feet (presumably with
+28AWG) ; 75 feet has been tested (by me) and works, with 26AWG cable.
+
+offset latch connector is Stewart 940-SP-3066-OST or equivalent. Also known as a 6P DEC connector.
+
+Crimp tool needed is often called a 6P DEC modular crimp tool. Usually these tools will crimp regular 4, 6 and 8 pin modular plugs as well.
+
+Cable is Assmann WSW Components AT-K-26-6-B/100 (black, 26AWG, 100 feet) or AT-K-26-6-S/100 (white, 26AWG, 100 feet) or equivalent.
+
+Using a 6-conductor telephone cord and cutting the RJ12 connectors off each end and crimping the offset latch connectors is a possibility. However, in recent years
+the quality of some of these cables has really declined, with the use of CCA (copper clad aluminum) and "tinsel" wire, both designed to reduce the amount of copper
+used. In one case I measured the resistance of the conductors in a 25 foot telephone cord distributed by a reputable brand of electrical supplies as 8 ohms for a 25 foot length.
+A 25-foot length of 28 awg wire should have a resistance of 1.62 ohms. Upon further inspection, the wire had very little copper in it, it was mostly filler. Therefore, 
+it would be a good idea to check the resistance of any cable used to construct a breakout-to-base cable.
+
+Photic stim connector:
+
+A 6-pin mini-din connector, exactly like that used for the PS/2 keyboard and mouse.
+
+Patient event switch:
+
+LEMO FGG.00.302.CLAD or MilspecWest PSG.00.302.CLAD -- the two numbers after CLAD designate the cable diameter that particular version
+can accept. 35 = 3.5mm
+
+I use the MilspecWest PSG.00.302.CLAD35 connector with the Tensility International Corp 30-00699 (28 awg, 2 conductor, white) cable and it works
+quite well. I add some adhesive-lined 3/8" diameter 4:1 heatshrink placed such that it covers the back end of the connector and the cable to give it a 
+bit more strain-relief.
+
+I install a 1/4" female "headphone" type socket on the other end so it can be with a standard normally-open (red button) nurse call button. 
+
+The terminal opposite the red dot on the connector is connected to the chassis ground of the base unit. The event switch is normally open and 
+pulls the TTL level signal line low when pushed, by grounding it.
+
+DC inputs on the base unit:
+
+These accept regular 3.5mm 1/8 plugs of the sort once used to connect headphones to Walkmans, but in the 2-terminal (mono) variety (the mono version was once used to
+connect earphones to AM transistor radios). The sleeve is grounded. The signal goes to the tip of the plug.
+
+Touchproof inputs on the breakout:
+
+These have a 1.5mm diameter male pin. It is very difficult to find "official" touchproof plugs, and they are expensive for what they are (stamped socket contacts).
+
+There is another solution. 1.6mm socket contacts (aka size 16 contacts) are widely available, and machined versions (which are more reliable and durable than stamped contacts) are available for around $1-$2 each. The 0.1mm difference does not seem to matter, and Grass (Natus) uses 1.6mm socket contacts on some of their "handcrafted" EEG leads. The specific 
+part that Grass (Natus) uses is M39029/5-116, and if you remove the heat shrink, you will see that the colored bands on the socket contact they use match up with this 
+part number exactly. This socket contact is gold-plated. Nickel-plated versions are also available. All the part numbers provided here are for the gold plated versions.
+
+M39029/5-116 is the military version of this particular socket contact. As this is a military part number, multiple manufacturers make equivalent parts under this number.
+
+Commercial versions of this socket contact include Amphenol Sine Systems Corp AT62-201-1631, Phoenix Contact 1519751, TE Connectivity Deutsch Connectors 0462-201-1631
+
+An 8-indent crimp tool is used to crimp these. Search for Deutsch size 16 closed barrel crimp tool will turn up many options. 
+
+As these contacts are designed for wire no smaller than 20AWG, if you want to use them with smaller wire like 26AWG or 28AWG, you can use a piece of 20AWG stranded wire as a
+shim in conjunction with your smaller wire when you crimp them. Cut the larger wire flush with the terminal after crimping. You can also solder these; Grass does. I have no
+experience with soldering them, I prefer to crimp them as that is what they are designed for.
+
+After crimping, you can use heat shrink tubing to insulate and protect the contact. 
+
+As far as durability--I have used the AT62-201-1631 contact for over 100 connect/disconnect cycles and it is still as tight as it was when new. 
+
+As size 16 machined contacts are widely used, there are other variations of them. For this usage, except in rare cases, it matters not what kind of connector they are designed to fit in.
+If you happen to find a good deal on size 16 machined socket contacts, you might want to give them a try and see how well they work. Do they grip the 1.5mm pin with sufficient tension?
+Watch out for that rare case, though. Some of these socket contacts are designed for connectors where the end of the male terminal and the beginning of the crimp area on the female contact is an inch or more. And that is about how far they will stick out of the touchproof jack. 
+
+There are also size 16 stamped socket contacts. I do not recommend their use for this purpose.
+
+
+
