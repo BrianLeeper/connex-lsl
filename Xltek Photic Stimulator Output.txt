@@ -1,0 +1,8 @@
+Xltek Photic Stimulator Output 6-pin mini-din (wire colors from some random 6-pin mini din cable I used for testing)
+
+1 Black TTL signal out from base, Connected with 4 to stimulator input
+2 Brown Ground 
+3 Red 
+4 Orange TTL signal in from base, Connected with 1 to stimulator input
+5 Yellow
+6 Green
