@@ -1,4 +1,5 @@
 Connector / Cable Info for the Connex:
+<brian.leeper@gmail.com>
 
 Breakout to base:
 
@@ -69,5 +70,37 @@ Watch out for that rare case, though. Some of these socket contacts are designed
 
 There are also size 16 stamped socket contacts. I do not recommend their use for this purpose.
 
+Masimo pulse-ox connector:
 
+This is an MDR14 socket.
+
+ To use the most common Masimo pulse-ox sensors which have a male db9 plug (LNCS = low noise cabled sensor), the Masimo cable needed is the 1814 cable. This cable
+has a white MDR-14 plug. The cable with the red MDR plug has a different number and is an MDR20 and will not work (though it possibly may if you replace the MDR20 with 
+an MDR14; I will be testing to see if this will work).
+
+There are at least three other connectors used for Masimo pulse-ox sensors: LNOP also known as "F-tab", M-LNCS, and RD-SET. I have tested the LNOP to MDR14 and the RD-SET 
+to MDR14 cables. These work with the Connex/Brain Monitor. I have not tested the M-LNCS to MDR14 cable, though there is no reason to expect that it would not work.
+There are adapters to connect the various sensor plugs (LNCS, LNOP, M-LNCS, RD-SET) to the various cable sockets. I have tested an LNOP to RED-SET adapter cable and it 
+works fine. (Todo: add part numbers for these cables when I find them, take pictures of these various connectors and put them in a pdf document)
+
+There are aftermarket compatible cables, however: The Connex/Brain Monitor, starting around 2016, uses Masimo boards that have firmware that block the use of non-Masimo
+cables. This firmware looks for the presence of a 1wire EEPROM in the cable and if it is not seen, the cable will appear to be defective. This 1wire EEPROM is in addition
+to the one in the pulse-ox sensor itself (which contains the calibration data), and is connected to the same wires. 
+
+At least one aftermarket compatible cable appears to contain a 1wire EEPROM that works on some Masimo boards, but a later firmware revision appears to have blacklisted
+this cable.
+
+Older firmware versions do not block the use of non-Masimo cables. Therefore, with these, you could make your own cable using an MDR14 plug and a db9f socket. (todo: put
+pinout table for db9f to mdr14 here).
+
+So, if a non-Masimo cable appears to be defective, it may just be that the cable is being blocked by the firmware. There is no indication that this is what is happening.
+
+It is possible to swap the Masimo board from one Connex/Brain Monitor base unit to another. No configuration changes are needed. Do it with the power off, of course.
+
+I am unaware of a method to view the firmware version on the Masimo board, or upgrade/downgrade the firmware without additional hardware. I think that there is a cable
+that connects the MDR14 socket to a serial port that is used for this in conjunction with Masimo firmware tools.
+
+(Todo: add details of how to convert a GE patient monitor Masimo cable to work with the Connex/Brain monitor by changing the GE plug for an MDR14)
+
+Note: I have purchased nearly all of the Masimo sensors and cables I tested used from Ebay sellers. These have a very low failure rate from what I have seen.
 
