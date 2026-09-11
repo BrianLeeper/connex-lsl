@@ -3,7 +3,9 @@
 
 **Connex-LSL** is an experimental transparent TCP proxy and Lab Streaming Layer (LSL) bridge for Xltek/Natus Connex-based EEG systems. This includes breakouts 
 REF 10395 and REF 012378 and base units REF 10396 (Connex) and REF 10388 (Brain Monitor). REF 10396 and REF 10388 bases, as well as the associated REF 10395
-and REF 012378 breakouts, are collectively referred to as Connex herein. Either breakout works with either base. The two base models are functionally equivalent for purposes of this project, as are the two breakout models.
+and REF 012378 breakouts, are collectively referred to as Connex herein. Either breakout works with either base. The two base models are functionally equivalent for
+purposes of this project, as are the two breakout models. Note: I have recently seen REF 10397, a Brain Monitor base unit without Masimo support and REF 10310, a
+breakout from prior to the Natus acquisition of Xltek. I have not tested these models, however my expectation is that they will work with this bridge.
 
 It sits between NeuroWorks and the Connex base, forwards the vendor protocol unchanged, and passively decodes the live acquisition stream for publication over LSL.
 
