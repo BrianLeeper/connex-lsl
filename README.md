@@ -7,6 +7,8 @@ and REF 012378 breakouts, are collectively referred to as Connex herein. Either 
 purposes of this project, as are the two breakout models. Note: I have recently seen REF 10397, a Brain Monitor base unit without Masimo support and REF 10310, a
 breakout from prior to the Natus acquisition of Xltek. I have not tested these models, however my expectation is that they will work with this bridge.
 
+New 9/16/2026: I have added pictures of this equipment, as well as preliminary info on how to use this without Neuroworks. 
+
 It sits between NeuroWorks and the Connex base, forwards the vendor protocol unchanged, and passively decodes the live acquisition stream for publication over LSL.
 
 Current release: **0.1b (beta)**
