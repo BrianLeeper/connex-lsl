@@ -2,8 +2,8 @@
 
 9-16-2026
 
-To use Connnex-LSL without Neuroworks, it should be possible to use the Python script I used for testing acquisition. I tentatively plan to call this Connex-Control. I am going to verify that it works this way, 
-then I will add it to this repository.
+To use Connnex-LSL without Neuroworks, it should be possible to use the Python script I used for testing acquisition. I tentatively plan to call this Connex-Control. I am 
+going to verify that it works this way, then I will add it to this repository.
 
 As of now, it is only capable of commanding the Connex base to send the calibration values for each channel,
 and to start acquisition in either 256HZ or 512Hz sampling. It also sends the keepalive messages every few 
@@ -19,9 +19,11 @@ It does not currently support:
 
 3: Photic stimulation control
 
-Support for these things is planned. Of these, the impedance test is the most complex, as Connex-Control has to measure the impedance test signal and translate that into an impedance value.
+Support for these things is planned. Of these, the impedance test is the most complex, as Connex-Control has to measure the impedance test signal and translate that 
+into an impedance value.
 
-If you have a Connex/Brain Monitor base, breakout, and no Neuroworks, here is what you can do to get it working with Connex-Control if you don't know what the IP address of the base is:
+If you have a Connex/Brain Monitor base, breakout, and no Neuroworks, here is what you can do to get it working with Connex-Control if you don't know what the 
+IP address of the base is:
 
 1)Add an ethernet interface to your host PC with the IP address 192.168.2.1, netmask 255.255.255.0 -- usb, pcie,
 it does not matter, even a virtual interface on a VLAN with an access port configured to match should work.
