@@ -1,0 +1,37 @@
+<brian.leeper@gmail.com>
+
+9-16-2026
+
+To use Connnex-LSL without Neuroworks, it should be possible to use the Python script I used for testing acquisition. I tentatively plan to call this Connex-Control. I am going to verify that it works this way, 
+then I will add it to this repository.
+
+As of now, it is only capable of commanding the Connex base to send the calibration values for each channel,
+and to start acquisition in either 256HZ or 512Hz sampling. It also sends the keepalive messages every few 
+seconds, without which the Connex base will stop sending the acquisition data.
+
+However, this should be enough to work with the Connex-LSL bridge.
+
+It does not currently support:
+
+1: Impedance test
+
+2: Calibration signal mode
+
+3: Photic stimulation control
+
+Support for these things is planned. Of these, the impedance test is the most complex, as Connex-Control has to measure the impedance test signal and translate that into an impedance value.
+
+If you have a Connex/Brain Monitor base, breakout, and no Neuroworks, here is what you can do to get it working with Connex-Control if you don't know what the IP address of the base is:
+
+1)Add an ethernet interface to your host PC with the IP address 192.168.2.1, netmask 255.255.255.0 -- usb, pcie,
+it does not matter, even a virtual interface on a VLAN with an access port configured to match should work.
+
+2)Power on the base unit, connect to your new ethernet interface added in step 1 above. Make sure that the 
+link light is on. (You do not need a crossover cable if your new interface is gigabit. The interface on the base unit is 10/100).
+
+3)Now you're going to reset the base unit IP address to the default 192.168.2.2.
+Press and hold the reset button until the link light turns off. If the link light does not turn off after 
+several seconds, release the reset button and verify that the link light turns off. If the link light does not
+turn off, it probably did not reset. Try again.
+
+4)The link light will turn back on. You should be able to ping the base unit at 192.168.2.2 within a couple of minutes.
