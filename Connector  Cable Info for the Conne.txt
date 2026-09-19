@@ -74,6 +74,19 @@ Masimo pulse-ox connector:
 
 This is an MDR14 socket.
 
+The MDR (Mini D Ribbon) is a connector whose heyday has come and gone. (Trivia: the 36 pin MDR connector is specified as the preferred connector for IEEE-1284, the
+enhanced parallel port, introduced over 30 years ago).
+3M made the original and still does; Hirose makes a compatible connector (DXM); other manufacturers such as DDK and Amphenol once made MDR connectors but no longer do.
+As a result, the options for MDR connectors are limited, particularly if you want a solder connector rather than an IDC connector. They are even more limited in the 14 pin 
+versions; that same vendor who stocks the 50 pin version may well not stock the 14 pin version, from what I have seen.
+
+I've found that the MDR14 plugs from Elecbee are inexpensive, they are solder-type rather than IDC, and they appear to be a clone of the Amphenol connector based on a data 
+sheet I found for the Amphenol MDR plugs. They come as a complete set; connector and backshell. (todo: put Elecbee part numbers here)
+
+Using an MDR14 plug other than the 3M original (10314) can result in clearance problems with the pan-head screws used to secure the MDR14 socket to the case. The plug
+may not fit. Solution: Replace the pan-head screws with wafer screws. I use M2.5x4 Nickel Wafer Head Machine Screw #20149 from metricscrews.us -- replace them one at a time
+otherwise you will be opening the base unit to get the MDR14 socket back in place.
+
  To use the most common Masimo pulse-ox sensors which have a male db9 plug (LNCS = low noise cabled sensor), the Masimo cable needed is the 1814 cable. This cable
 has a white MDR-14 plug. The cable with the red MDR plug has a different number and is an MDR20 and will not work (though it possibly may if you replace the MDR20 with 
 an MDR14; I will be testing to see if this will work).
