@@ -1,5 +1,15 @@
 <brian.leeper@gmail.com>
 
+EDIT 11-24-2026: I have uploaded connex-control.py
+
+to make this work without Neuroworks, open a cmd window (as administrator if needed) and run the following command, assuming your base unit is at 192.168.2.2 :
+connex_lsl_proxy_0.1b.py --device 192.168.2.2 --device-port 2200 --listen 127.0.0.1 --listen-port 2200
+
+then open another cmd window and run (as administrator if needed):
+connex-control.py --host 127.0.0.1 --port 2200
+
+This should result in an lsl stream at 512Hz sampling rate. 
+
 9-16-2026
 
 To use Connnex-LSL without Neuroworks, it should be possible to use the Python script I used for testing acquisition. I tentatively plan to call this Connex-Control. I am 
